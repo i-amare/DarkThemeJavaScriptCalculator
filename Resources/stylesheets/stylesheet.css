@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Overpass Mono, Roboto Mono, Arial, sans-serif;
+}
+
+html,
+body {
+	background-color: #17273b;
+	font-family: Overpass Mono, Roboto Mono, Arial, sans-serif;
+	height: 90vh;
+	font-size: 20px;
+	margin-top: 2.5vh;
+}
+
+.calculator {
+	height: 100%;
+	width: 33.33%;
+	margin: auto;
+	display: grid;
+	grid-template-rows: 20% 80%;
+	background-color: #1d1d1d;
+}
+
+/* ------------------------------ */
+/* TEXT FIELD */
+/* ------------------------------ */
+
+.text-field {
+	width: 100%;
+	height: 100%;
+}
+
+.text-field input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	text-align: right;
+	font-size: 150%;
+}
+
+/* ------------------------------ */
+/* BUTTONS */
+/* ------------------------------ */
+
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 1px;
+}
+
+.buttons button {
+	background-color: #1c2b49;
+	border: none;
+	color: #ccc;
+	outline-color: black;
+	outline-width: 1px;
+	font-size: 90%;
+	transition: background-color 0.5s,transform 0.25s;
+}
+
+.buttons button:hover,
+.buttons button:active {
+	background-color: #3986c9;
+}
+
+.buttons button:active {
+	transform: scale(0.95);
+}
+
+.buttons #equals-btn {
+	grid-column: 3/5;
+	background-color: #c63676;
+}
+
+/* ------------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------------ */
+
+@media screen and (max-width: 1350px) {
+	.calculator {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.calculator {
+		width: 100%;
+		height: 100%;
+	}
+	html,
+	body {
+		height: 100vh;
+		margin: 0;
+	}
+}
