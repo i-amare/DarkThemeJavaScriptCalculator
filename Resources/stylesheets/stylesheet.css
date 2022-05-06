@@ -57,7 +57,7 @@ body {
 	outline-color: black;
 	outline-width: 1px;
 	font-size: 90%;
-	transition: background-color 0.5s,transform 0.25s;
+	transition: background-color 0.5s, transform 0.25s;
 }
 
 .buttons button:hover,
